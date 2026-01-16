@@ -18,7 +18,8 @@ if(Get-WmiObject -Class win32_battery -ComputerName $computer)
 { $isLaptop = $true }
 $isLaptop
 }
-If(Detect-Laptop) { laptop }
-else { Not laptop}
+If(Detect-Laptop) { laptop }
+else { Not laptop}
 #Listing computer manufacturer and model
+
 #Get-CimInstance -ClassName Win32_ComputerSystem
